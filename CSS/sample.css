@@ -1,0 +1,47 @@
+h1{
+    color: aqua;
+    background-color: blueviolet;
+}
+#heading1{
+    color: blue;
+    background-color: brown;
+}
+#hd2{
+    color: cadetblue;
+
+}
+.hd3{
+    color: chocolate;
+    text-align: center;
+}
+div p{
+    border: 5px solid red; 
+}
+p ::before{
+    content: "before content";
+    font-weight: bold;
+}
+a{
+    color: blueviolet;
+    text-decoration: none;
+
+}
+a:hover{
+    color: green;
+}
+a:visited{
+    color: yellow;
+}
+ul li:first-child{
+    color: red;
+    font-weight: bold;
+}
+ul li::first-letter{
+    font-size: large;
+    color: cornflowerblue;
+}
+ul li::after{
+    content: "→ ";
+    color: green;
+    font-weight: bold;
+}

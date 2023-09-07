@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+   <script>
+     function Palindrome(str) {
+        
+        str = str.replace(/[^a-zA-Z0-9]/g, '').toLowerCase()
+        
+        for (let i = 0, j = str.length - 1; i < j; i++, j--) {
+          if (str[i] !== str[j]) {
+            return false
+          }
+        }
+        return true
+      }
+      const inputString = prompt('Enter Here')
+      const result = Palindrome(inputString)
+      if (result) {
+        console.log(inputString + " is a palindrome.")
+      } else {
+        console.log(inputString + " is not a palindrome.")
+      }
+      
+   </script>
+</body>
+</html>

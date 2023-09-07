@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        table th,table td{
+            border: 1px solid blue;
+            padding: 8px;
+            text-align: center;
+        }
+        table th {
+            background-color: brown;
+            font-weight: bold;
+        }
+        table{
+            border-collapse: collapse;
+        }
+        table tr:nth-child(even){
+            background-color:cadetblue;
+        }
+        .div2{
+            height: 100px;
+            width: 200px;
+            background-image: url('/images/girl.jpg');
+            background-repeat: repeat-x;
+            border: 2px solid red;
+            background-position: center;
+            background-size: cover;
+        }
+        .paral{
+            font-family: 'Courier New', Courier, monospace;
+            font-size: 30px;
+            font-weight: bold;
+            font-style: italic;
+            text-align: center;
+            color: coral;
+            text-transform: uppercase;
+            text-decoration: underline;
+            line-height: 1.5;
+            letter-spacing: 2px;
+            word-spacing: 3px;
+        }
+    </style>
+</head>
+<body>
+    <table>
+        <tr>
+            <th>
+            product
+            </th>
+            <th>price</th>
+            <th>stock
+            </th>
+        </tr>
+        <tr>
+            <td>product1</td>
+            <td>
+                1000
+            </td>
+            <td>10</td>
+        </tr>
+        <tr>
+            <td>
+                product2
+            </td>
+            <td>2000</td>
+            <td>20</td>
+        </tr>
+        <tr>
+            <td>
+                product3
+            </td>
+            <td>3000</td>
+            <td>30</td>
+        </tr>
+    </table>
+<div class="div2">
+
+</div>
+<p class="paral">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Placeat, harum.</p>
+</body>
+</html>

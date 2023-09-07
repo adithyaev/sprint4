@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+       body{
+        display: grid;
+        grid-template-columns: 1fr auto;
+        grid-template-rows: 1fr 100px 10fr;
+        min-height: 50vh;
+       }
+        
+        header{
+            background-image:url(/images/coffee.jpg) ;
+            background-size: cover;
+            text-align: center;
+            color: black;
+            grid-row-start: 1;
+            width: 1500px;
+            
+        }
+        ul{
+            padding: 5px;
+            background-color: rgba(0,0,0,0.5);
+            background-size: cover;
+            
+            text-align: right;
+            color: aliceblue;
+            
+        }
+        li{
+            display: inline;
+            padding: 0px 10px 0px 10px;
+            height: fit-content;
+            
+        }
+        .name{
+            text-align: left;
+            
+        }
+        div{
+            
+            text-align: center;
+            color: antiquewhite;
+        }
+        .out{
+            color: black;
+        }
+        .div2{
+            
+            
+           grid-row-start: 2;
+            color: black;
+            position: relative;
+            left: -300px;
+        }
+        .about{
+            text-align: center;
+            color: brown;
+            size: 10px;
+            font-style: bold;
+            
+           
+        }
+        .div3{
+        
+            grid-row-start: 2;
+            /* grid-column-start: 3; */
+            position: relative;
+            left: -300px;
+            padding-top: 20px;
+
+            
+            
+           
+        }
+        
+        
+
+
+        
+    </style>
+</head>
+<body>
+    <header>
+        
+        <ul>
+            <h1 class="name">GrandCoffee</h1>
+            <li>home</li>
+            <li>about us</li>
+            <li>gallery</li>
+            <li>contact us</li>
+        </ul>
+        <div>
+            <h1 class="out">outstanding </h1>
+            <h1>coffee shop</h1>
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quia id harum,<br> 
+                facere enim voluptatum maiores consequuntur explicabo. Repellendus debitis,<br> 
+                sed excepturi culpa esse eveniet atque recusandae praesentium quam veritatis quod?
+
+            </p>
+            <button>Read more</button>
+        </div>
+
+    </header>
+    <div class="div2">
+        <h1 class="about">ABOUT US</h1>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit odit magni nostrum voluptate dicta voluptates rerum assumenda <br>deleniti placeat maiores!
+
+        </p>
+        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Impedit pariatur numquam nisi veritatis laboriosam. Dolorem maxime <br>similique necessitatibus rem id.</p>
+        
+        <button>Read more</button>
+        
+    </div >
+   <div class="div3">
+    <img src="/images/coffee2.jpg" alt="" width="300px">
+</div>
+</body>
+</html>

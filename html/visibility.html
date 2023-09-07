@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+    .visible{
+       background-color: darkred;
+       color: white;
+       padding: 10px;
+       visibility: visible;
+    }
+    .hidden{
+        background-color: blue;
+        color: white;
+       padding: 10px;
+       /* visibility: hidden; */
+       display: none;
+
+    }
+    .opaque{
+        background-color: darkolivegreen;
+        color: white;
+        padding: 10px;
+        margin: 20px;
+        opacity: 1;
+
+    }
+    .transperant{
+        background-color: darkslategray;
+        color: black;
+        padding: 10px;
+        margin: 20px;
+        opacity: .6;
+    }
+    .gradient{
+        height: 200px;
+        width: 200px;
+        background-image: linear-gradient(45deg ,blue ,green,red);
+        /* background-image: radial-gradient(circle ,yellow,green); */
+        box-shadow: 10px 10px 15px darkgreen;
+        
+
+    }
+    .overflow{
+        width: 300px;
+        height: 200px;
+        border: 1px solid red;
+        padding: 10px;
+        overflow:scroll;
+    }
+    </style>
+</head>
+<body>
+    <div class="visible">this is a visible elemnt</div>
+    <div class="hidden">this is a hidden elemnt</div>
+    <div class="visible">this is a hidden elemnt</div>
+    <div class="opaque">this is opaque
+        <p>this is paragrapg opaque element</p>
+    </div>
+    <div class="transperant">this is transperant
+        <p>this is paragraph transperant element</p>
+    </div>
+    <div class="gradient"></div>
+    <div class="overflow">
+        <p>Lorem iotamone tenetur. Repellendus assm sint? Sit quidem consequatur commodi.lorem2
+        </p>
+    </div>
+
+</body>
+</html>

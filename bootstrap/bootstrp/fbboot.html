@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="/bootstrap/css/bootstrap.css">
+    <script src="/bootstrap/js/bootstrap.js"></script>
+    <style>
+       
+       #header_container{
+        background-color:  #3b5998;
+        color: #ffffff;
+           
+        }
+        @media(max-width: 991px){
+            #login_form_email,#login_form_password,#login_form_login{
+                background-color: #ffffff;
+                color: gray;
+            }
+            #left_container{
+                text-align: center;
+            }
+            
+        }
+       
+        li {
+            display: inline;
+            padding: 0px 5px 0px 5px;
+        }
+
+        
+    </style>
+</head>
+
+<body>
+    <div class="container-fluid">
+        <div class="container" id="header_container" style="height: 100%; width: 100%;">
+            <div class="row" >
+                <div class="col-lg-6 col-md-12 col-sm-12 col-xs-12">
+                    <img src="/images/Facebook.jpeg" width="100px" alt="">
+                </div>
+
+                <div class="col-lg-2 col-md-12 col-sm-12 col-xs-12" id="login_form_email">
+                    <form class="form-inline">
+                        <label id="mail" class="form-label"><b> Email</b></label>
+                        <input type="email" class="form-control" placeholder="Email/Phone">
+                </div>
+                <div class="col-lg-2 col-md-12 col-sm-12 col-xs-12" id="login_form_password">
+                    <label id="password" class="form-label"><b>Password</b></label>
+                    <input type="password" class="form-control" placeholder="Enter your password">Forgotten password?
+                </div>
+                <div class="col-lg-2 col-md-12 col-sm-12 col-xs-12 d-grid gap-2 d-md-block" id="login_form_login">
+                    <button type="button" class="btn btn-info btn-block"
+                        style="margin-top: 30px;color: white;">Login</button>
+                </div>
+                </form>
+            </div>
+        </div>
+
+
+    </div>
+    <div class="container" style="background: linear-gradient(#ffffff, #edf0f5); height: 100%; width:100%;">
+        <div class="row">
+            <div class="col-lg-6 col-md-12 col-sm-12 col-xs-12" >
+                <div class="row">
+                    <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 d-none d-sm-block d-sm-none d-md-block d-md-none d-lg-block"
+                    id="left_container" >
+
+                        <h6>Facebook helps you connect and share with the people in your life</h6><br>
+                        <img src="https://api.time.com/wp-content/uploads/2019/07/delete-facebook-data.jpg" alt=""
+                            width="500px">
+                    </div>
+                </div>
+            </div><br>
+            <div class="col-lg-6 col-md-12 col-sm-12 col-xs-12">
+                <center><h3 ><b>Create an account</b></h3>
+                <h6>Its free and always will be</h6></center>
+                <br><br>
+                <form class="inline_form">
+                    <div class="row">
+                        <div class="col-lg-6 col-md-12 col-sm-12 col-xs-12">
+                            <input type="text" class="form_control" placeholder="First name" aria-label="First Name" style="display: block; width: 100%;">
+                            
+                        </div><br>
+                    
+                        <div class="col-lg-6 col-md-12 col-sm-12 col-xs-12">
+                            <input type="text" class="form_control" placeholder="Second Name" aria-label="Second Name" style="display: block; width: 100%;">
+                            
+                        </div> 
+                    </div> <br>
+                        <div class="col-lg-6 col-md-12 col-sm-12 col-xs-12">
+                            <input type="number" class="form-control" placeholder="Mobile Number"   style="display: block;width: 200%;">
+                            
+                        </div> <br>
+                    
+                        <div class="col-lg-6 col-md-12 col-sm-12 col-xs-12 d-none d-md-block">
+                            <input type="email" class="form-control" placeholder="Email" style="display: block; width: 200%;">
+                            
+                        </div><br>
+                        <div class="col-lg-6 col-md-12 col-sm-12 col-xs-12 d-none d-md-block">
+                            <input type="password" class="form-control" placeholder="Password" style="display: block; width: 200%;">
+                        </div> <br>
+                        <div class="row">
+                        <div class="col-lg-6 col-md-12 col-sm-12 col-xs-12 d-none d-md-block">
+                            <input type="date"  style="display: block; width: 100%;">
+                            
+                        </div>
+                        <div class="col-lg-6 col-md-12 col-sm-12 col-xs-12 d-none d-md-block">
+                            <p>why do i need to provide my date of birth?</p>
+                        </div>
+                    </div><br>
+                        <div class="col-lg-6 col-md-12 col-sm-12 col-xs-12 d-none d-md-block">
+                            <input type="radio" id="male" name="gender" value="male"> male
+                            <input type="radio" id="female" name="gender" value="female">female
+                            
+                        </div><br>
+                    
+                
+                <p class="col-lg-6 col-md-12 col-sm-12 col-xs-12 d-none d-md-block">Lorem ipsum dolor sit amet consectetur adipisicing elit. Impedit delectus dolore ea expedita nisi
+                    laudantium officiis optio cupiditate, magni veniam.
+
+                </p>
+                <button class="btn btn-success d-none d-sm-block d-sm-none d-md-block d-md-none d-lg-block" style="color: white; background-color:lightgreen;height: 40px;width: 240px;">Create an account</button>
+            </form>
+            </div>
+        </div>
+
+    </div>
+    <br>
+    <footer class="col-lg-6 col-md-12 col-sm-12 col-xs-12 d-none d-md-block" style="background-color: beige; color: black; ">
+
+
+        <ul>
+            <li>SignUp</li>
+            <li>Login</li>
+            <li>Mobile</li>
+            <li>find friends</li>
+            <li>pages</li>
+            <li>Help</li>
+        </ul>
+
+    </footer>
+
+
+
+</body>
+
+</html>

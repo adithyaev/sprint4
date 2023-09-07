@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        header{
+            text-align: center;
+            background: url(https://images.pexels.com/photos/1563356/pexels-photo-1563356.jpeg?cs=srgb&dl=pexels-craig-adderley-1563356.jpg&fm=jpg);
+            background-size: cover ;
+            color: white;
+        }
+        a{
+            color: white;
+        }
+        h1{
+            font-size: 70px;
+        }
+        img{
+            margin: 40px 0px 0px 0px;
+            border: 7px solid white;
+            border-radius: 20px;
+        }
+        ul{
+           padding: 10px;
+           background: rgba(0,0,0,0.5);
+        }
+        li{
+            display: inline;
+            padding: 0px 10px 0px 10px;
+        }
+        article{
+            max-width: 500px;
+            padding: 20px;
+            margin: 0 auto;
+        }
+        @media (max-width: 500px) {
+            h1{
+                font-size: 36px;
+                padding: 5px;
+            }
+            li{
+                padding: 5px;
+                display: block;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+       <img src="/images/girl.jpg" width="180px">
+       <h1>Adithya's Blog</h1>
+       <ul>
+        <li><a href="#">About</a></li>
+        <li><a href="#">Best poem</a></li>
+        <li><a href="#">Worst poem</a></li>
+       </ul>
+    </header>
+    <article>
+        <h1>Lorem ipsum, dolor sit amet .</h1>
+        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Exercitationem doloremque modi perspiciatis esse similique dolor accusantium perferendis atque unde deserunt at reprehenderit dicta, asperiores blanditiis officiis aliquam temporibus expedita eaque quasi quas quam, rerum excepturi mollitia? Laboriosam consectetur quibusdam, sequi ad porro veritatis doloremque sapiente velit deserunt est suscipit. Placeat, at voluptates nisi eos culpa sequi molestias quas possimus perspiciatis voluptatibus, consequuntur suscipit reiciendis similique aliquam itaque officiis ipsa odit nesciunt incidunt rem id minima quis quos dolore! Error numquam vel ut et quas vero cum culpa ipsum modi nemo.
+        </p>
+        <button>like</button>
+    </article>
+    <article>
+    <h1>Lorem ipsum, dolor sit amet </h1>
+        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Exercitationem doloremque modi perspiciatis esse similique dolor accusantium perferendis atque unde deserunt at reprehenderit dicta, asperiores blanditiis officiis aliquam temporibus expedita eaque quasi quas quam, rerum excepturi mollitia? Laboriosam consectetur quibusdam, sequi ad porro veritatis doloremque sapiente velit deserunt est suscipit. Placeat, at voluptates nisi eos culpa sequi molestias quas possimus perspiciatis voluptatibus, consequuntur suscipit reiciendis similique aliquam itaque officiis ipsa odit nesciunt incidunt rem id minima quis quos dolore! Error numquam vel ut et quas vero cum culpa ipsum modi nemo.
+        </p>
+        <button>like</button>
+    </article>
+    <article>
+    <h1>Lorem ipsum, dolor sit amet </h1>
+        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Exercitationem doloremque modi perspiciatis esse similique dolor accusantium perferendis atque unde deserunt at reprehenderit dicta, asperiores blanditiis officiis aliquam temporibus expedita eaque quasi quas quam, rerum excepturi mollitia? Laboriosam consectetur quibusdam, sequi ad porro veritatis doloremque sapiente velit deserunt est suscipit. Placeat, at voluptates nisi eos culpa sequi molestias quas possimus perspiciatis voluptatibus, consequuntur suscipit reiciendis similique aliquam itaque officiis ipsa odit nesciunt incidunt rem id minima quis quos dolore! Error numquam vel ut et quas vero cum culpa ipsum modi nemo.
+        </p>
+        <button>like</button>
+    </article>
+    <script>
+         $("button").on("click", function() {
+      alert("Clicked!");
+    });
+    </script>
+
+</body>
+</html>

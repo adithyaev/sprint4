@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="/bootstrap/css/bootstrap.css">
+    <script src="/bootstrap/js/bootstrap.js"></script>
+</head>
+
+<body>
+    <form >
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name"><br><br>
+
+        <label for="age">Age:</label>
+        <input type="number" id="age" name="age" ><br><br>
+
+
+        <label for="subject">Subject:</label>
+        <input type="text" id="subject" name="subject" ><br><br>
+
+        <label for="place">Place:</label>
+        <input type="text" id="place" name="place" ><br><br>
+
+        <input type="button" value="Add" id="button1">
+    </form>
+
+    <table class="table" style="border: 3px solid black;">
+        <thead>
+            <th scope="col">SI NO</th>
+            <th scope="col">Name</th>
+            <th scope="col">Age</th>
+            <th scope="col">Subject</th>
+            <th scope="col">Place</th>
+            <th scope="col">Status</th>
+            <th scope="col">Action</th>
+        </thead>
+        <tbody id="tbody">
+
+        </tbody>
+    </table>
+   <!-- Button trigger modal -->
+<button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">
+    
+  </button>
+  
+  <!-- Modal -->
+  <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h1 class="modal-title fs-5" id="exampleModalLabel">Modal title</h1>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+            <form >
+                <label for="name">Name:</label>
+                <input type="text" id="name1" name="name"><br><br>
+        
+                <label for="age">Age:</label>
+                <input type="number" id="age1" name="age" ><br><br>
+        
+        
+                <label for="subject">Subject:</label>
+                <input type="text" id="subject1" name="subject" ><br><br>
+        
+                <label for="place">Place:</label>
+                <input type="text" id="place1" name="place" ><br><br>
+               
+            </form>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+          <button type="button" class="btn btn-primary">Save changes</button>
+        </div>
+      </div>
+    </div>
+  </div>
+    <script>
+       var name = document.getElementById('name')
+       var age = document.getElementById('age')
+       var subject = document.getElementById('subject')
+       var place = document.getElementById('place') 
+       var add = document.getElementById('button1')
+       var tablebody = document.getElementById('tbody')
+       var EinputName = document.getElementById('name1')
+        var EinputAge = document.getElementById('age1')
+        var EinputSub = document.getElementById('subject1')
+        var EinputPlace = document.getElementById('place1')
+       i=0
+        function add1(){
+          
+            var row = tablebody.insertRow()
+            var cell1 = row.insertCell(0)
+            var cell2 = row.insertCell(1)
+            var cell3 = row.insertCell(2)
+            var cell4 = row.insertCell(3)
+            var cell5 = row.insertCell(4)
+            var cell6 = row.insertCell(5)
+            var cell7 = row.insertCell(6)
+            var cell8 = row.insertCell(7)
+            cell1.innerHTML = i+1
+            cell2.innerHTML = name.value
+            cell3.innerHTML = age.value
+            cell4.innerHTML = subject.value
+            cell5.innerHTML = place.value
+            
+            var statusButton = document.createElement('button')
+            statusButton.innerHTML = 'complete'
+            statusButton.onclick = function status(){
+                cell6.innerHTML = 'completed'
+            }
+            cell6.appendChild(statusButton)
+
+            var editButton = document.createElement('button')
+            editButton.innerHTML = 'Edit'
+            editButton.setAttribute('data-bs-toggle','modal')
+            editButton.setAttribute('data-bs-target','#exampleModal')
+            editButton.addEventListener('click' , function edit(){
+            EinputName.value = cell2.innerHTML
+            EinputAge.value = cell3.innerHTML
+            EinputSub.value = cell4.innerHTML
+            EinputPlace.value = cell5.innerHTML
+            })
+            cell7.appendChild(editButton)
+            
+
+            var deleteButton = document.createElement('button')
+            deleteButton.innerHTML = 'delete'
+            deleteButton.addEventListener('click' , function del(event){
+
+                event.target.parentElement.parentElement.remove()
+            })
+            cell8.appendChild(deleteButton)
+
+            i++
+
+        }
+        // add.addEventListener('click',add)
+
+       add.onclick = function(){
+        add1();
+       } 
+
+
+
+
+    </script>
+</body>
+
+</html>
