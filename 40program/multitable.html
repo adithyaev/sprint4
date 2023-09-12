@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!-- write a program to print the multiplication table of the given number -->
+    <script>
+        const number = Number(prompt('enter the number')) 
+const length = Number(prompt('enter the length'))
+
+        function multiplication(number, length) {
+    for (let i = 1; i <= length; i++) {
+        console.log(`${number} x ${i} = ${number * i}`);
+    }
+}
+
+console.log(`Multiplication table for ${number}:`);
+multiplication(number, length);
+
+    </script>
+</body>
+</html>

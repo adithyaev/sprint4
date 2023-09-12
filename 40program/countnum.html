@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!-- Write a program to count total number of notes in given amount.
+ -->
+   <script>
+    const amount = Number(prompt('enter the number'))
+countNotes(amount);
+    function countNotes(amount) {
+  
+  const denominations = [2000, 500, 200, 100, 50, 20, 10, 5, 2, 1];
+
+  
+  const noteCounts = {};
+
+  
+  for (let denomination of denominations) {
+    if (amount >= denomination) {
+      const count = Math.floor(amount / denomination);
+      noteCounts[denomination] = count;
+      amount -= count * denomination;
+    }
+  }
+
+  
+  console.log("Total number of notes:");
+  for (let denomination in noteCounts) {
+    console.log(`Rs. ${denomination}: ${noteCounts[denomination]}`);
+  }
+}
+
+
+
+
+   </script> 
+</body>
+</html>

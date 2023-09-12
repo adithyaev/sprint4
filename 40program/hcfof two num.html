@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!-- Find HCF of two numbers. -->
+    <script>
+        const number1 = Number(prompt('enter first number'));
+        const number2 = Number(prompt('enter second number'));
+        const hcf = findHCF(number1, number2);
+        function findHCF(num1, num2) {
+    while (num2 !== 0) {
+        const temp = num2;
+        num2 = num1 % num2;
+        num1 = temp;
+    }
+    return num1;
+}
+
+
+
+
+
+
+console.log(`HCF of ${number1} and ${number2} is ${hcf}`);
+
+    </script>
+</body>
+</html>

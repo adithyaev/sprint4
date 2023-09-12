@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!-- Given a string s and two indices start and end print a substring containing all inclusive
+characters from start to end-1. Don’t use any built in function. -->
+    <script>
+        const inputString = prompt('enter a string')
+        const startIndex = Number(prompt('enter the number'));
+const endIndex = Number(prompt('enter the number'));  
+        function extractSubstring(s, start, end) {
+    if (start < 0 || start >= s.length || end <= start || end > s.length) {
+        return "Invalid indices";
+    }
+
+    let result = "";
+
+    for (let i = start; i < end; i++) {
+        result += s[i];
+    }
+
+    return result;
+}
+
+
+
+ 
+const extractedSubstring = extractSubstring(inputString, startIndex, endIndex);
+console.log("Extracted Substring:", extractedSubstring);
+
+    </script>
+</body>
+</html>

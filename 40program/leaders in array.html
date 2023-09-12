@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!-- Write a program to print all the LEADERS in the array. An element is leader if it is
+greater than all the elements to its right side. The rightmost element is always a
+leader -->
+    <script>
+        const array = [16, 17, 4, 3, 5, 2];
+const leaderArray = findLeaders(array);
+
+        function findLeaders(arr) {
+    const n = arr.length;
+    let maxRight = arr[n - 1];
+    const leaders = [maxRight]; 
+
+    
+    for (let i = n - 2; i >= 0; i--) {
+        if (arr[i] > maxRight) {
+           
+            maxRight = arr[i];
+            leaders.unshift(maxRight); 
+        }
+    }
+
+    return leaders;
+}
+
+
+
+
+console.log("Leaders in the array are:", leaderArray);
+
+    </script>
+</body>
+</html>

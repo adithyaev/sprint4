@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!-- Write a program to create a simple calculator for Division, Multiplication, Addition and
+Subtraction. Use switch case or if else ladder -->
+    <script>
+        const operation = prompt('enter operator')
+const num1 = Number(prompt('enter first number'))
+const num2 = Number(prompt('enter second number'))
+function calculator(operation, num1, num2) {
+    switch (operation) {
+        case "add":
+            return num1 + num2;
+        case "subtract":
+            return num1 - num2;
+        case "multiply":
+            return num1 * num2;
+        case "divide":
+            if (num2 !== 0) {
+                return num1 / num2;
+            } else {
+                return "Division by zero is not allowed";
+            }
+        default:
+            return "Invalid operation";
+    }
+}
+
+
+
+
+const result = calculator(operation, num1, num2);
+
+console.log(`Result of ${operation}: ${result}`);
+
+    </script>
+</body>
+</html>

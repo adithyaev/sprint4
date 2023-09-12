@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!--  (a+2^0*b),(a+2^0.b+2^1.b),..(a+2^0.b+2^1.b+……+2^n-1.b)
+Write a program to print a series using above formula.
+Constraints:
+1<=a, b<=50.
+1<=n<=15 -->
+    <script>
+        const a = 5; 
+       const b = 3; 
+       const n = 10;
+        function generateSeries(a, b, n) {
+    let result = "";
+    let sum = a;
+    let term = b;
+
+    for (let i = 0; i < n; i++) {
+        result += sum;
+        sum += term;
+        term *= 2;
+
+        if (i < n - 1) {
+            result += ", ";
+        }
+    }
+
+    return result;
+}
+
+
+ 
+
+const series = generateSeries(a, b, n);
+console.log("Series:", series);
+
+    </script>
+</body>
+</html>
